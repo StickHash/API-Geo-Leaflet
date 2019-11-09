@@ -1,0 +1,43 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Les différents scripts js et fichiers css sont inclus ci-dessous, l'ordre est important!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="action.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
+    <title>Recherche par commune</title>
+</head>
+<body>
+<div class="container-fluid">
+    <main>
+        <h1>Rechercher une commune</h1>
+        <input type="text" id="city" autofocus/>
+        <button type="button" class="btn btn-info" id="searching">Chercher</button>
+        <div id="choice">
+            <h3>Choisissez la commune dans la liste déroulante</h3><select id="select-choice"></select>
+        </div>
+        <div id="result" class="row">
+            <div class="col-sm-8 col-md-6">
+
+                <div id="mapid"><!--La map est contenue dans cette div--></div>
+            </div>
+            <div id="info" class="col-sm-8 col-md-6"><!--Ici on peut afficher des infos sur la commune--></div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
